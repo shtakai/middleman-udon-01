@@ -17,6 +17,15 @@ title: Welcome to Middleman
 </h1>
 <a href="#" name="button1" onclick="console.log('button pushed');dataLayer.push({'event': 'button1-click'});" >Button 1</a>
 
+<a href="#"
+   name="color"
+   onclick="console.log('color push');dataLayer.push({
+     'color': 'red',
+     'conversionValue': 50,
+     'event': 'customizeCar'});">
+  Customize Color
+</a>
+
 <%= link_to(
   "Read Documentation",
   "https://middlemanapp.com/basics/templating_language/",
