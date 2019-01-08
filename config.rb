@@ -13,6 +13,12 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+# markdown
+set :markdown_engine, :redcarpet
+set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true, :with_toc_data => true, :smartypants => true
+
+activate :livereload
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
